@@ -1,0 +1,92 @@
+@charset "UTF-8";
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  #root div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#root div .option {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  #root div .option {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 300px) {
+  #root div .option {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+#root div .option:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+#root div .pedra {
+  background-color: #9c9c9c;
+  color: #fff;
+}
+#root div .papel {
+  background-color: #fff;
+}
+#root div .tesoura {
+  background-color: #f00;
+  color: #fff;
+}
+#root .result {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  #root .result {
+    font-size: 20px;
+  }
+}
+#root .classificação {
+  position: absolute;
+  top: 280px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  #root .classificação {
+    top: 400px;
+  }
+}
+@media (max-width: 410px) {
+  #root .classificação {
+    top: 300px;
+    flex-direction: column;
+  }
+}
+#root .classificação p {
+  font-weight: 400;
+  margin-inline: 5px;
+  font-size: 32px;
+}
+@media (max-width: 900px) {
+  #root .classificação p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
